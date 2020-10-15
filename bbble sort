@@ -3,36 +3,36 @@
 #include<stdio.h>
 void main()
 {
-int a[100],i,j,t,n;
+int array[100],I,J,T,n;
 printf("Enter limit : ");
 scanf("%d",&n);
 printf("Enter the elements :  ");
-for(i=0;i<n;i++)
+for(I=0;I<n;I++)
 {
-scanf("%d",&a[i]);
+scanf("%d",&array[I]);
 }
 printf("Entered aray is : ");
-for(i=0;i<n;i++)
+for(I=0;I<n;I++)
 {
-printf("%d  \n",a[i]);
+printf("%d  \n",array[I]);
 }
 
-for(i=0;i<(n-1);i++)
+for(I=0;I<(n-1);I++)
 {
-for(j=0;j<(n-i-1);j++)
+for(J=0;J<(n-I-1);J++)
 {
-if(a[j]>a[j+1])
+if(array[J]>array[J+1])
 {
-t=a[j];
-a[j]=a[j+1];
-a[j+1]=t;
+T=array[J];
+array[J]=array[J+1];
+array[J+1]=T;
 }
 }
 }
-printf("\nSorted array is : \n");
-for(i=0;i<n;i++)
+printf("\nSorted form of array is array is : \n");
+for(I=0;I<n;I++)
 {
-printf("%d  \n",a[i]);
+printf("%d   \n",array[I]);
 }
 printf("\n");
 }
